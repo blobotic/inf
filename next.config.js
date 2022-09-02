@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  basePath: "/savoir"
+  basePath: "/inf"
 }
 
 module.exports = nextConfig

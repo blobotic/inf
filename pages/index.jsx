@@ -11,7 +11,7 @@ import Head from "next/head";
 export default function Home({posts}) {
   return (
     <div>
-      <Head> <title>savoir</title> </Head>
+      <Head> <title>inf</title> </Head>
 
       <Header />
 
