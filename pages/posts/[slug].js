@@ -26,18 +26,18 @@ import Header from "../../components/header";
 export default function Post({frontmatter, content}) {
 	const {title, category, date, tags, excerpt} = frontmatter;
 
-	return (<div class="post">
+	return (<div className="post">
     <Head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css" integrity="sha384-bYdxxUwYipFNohQlHt0bjN/LCpueqWz13HufFEV1SUatKs1cm4L6fFgCi1jT643X" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css" integrity="sha384-bYdxxUwYipFNohQlHt0bjN/LCpueqWz13HufFEV1SUatKs1cm4L6fFgCi1jT643X" crossOrigin="anonymous" />
     </Head>
 		
     <Header />
-		<h1 class="title">{title}</h1>
-		<p class="date">{date}</p>
-		<p class="category">Category: {category}</p>
-    <p class="tags">Tags: {tags.join()}</p>
-    <hr class="sep" />
-		<div class="content" dangerouslySetInnerHTML={{ __html: md.render(content) }} />
+		<h1 className="title">{title}</h1>
+		<p className="date">{date}</p>
+		<p className="category">Category: {category}</p>
+    <p className="tags">Tags: {tags.join()}</p>
+    <hr className="sep" />
+		<div className="content" dangerouslySetInnerHTML={{ __html: md.render(content) }} />
 		</div>)
 }
 

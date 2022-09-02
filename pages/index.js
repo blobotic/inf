@@ -15,8 +15,8 @@ export default function Home({posts}) {
         const {slug, frontmatter} = post;
         // extract frontmatter properties
         const {title, category, date, tags, excerpt} = frontmatter;
-
-        return (<Card slug={slug} title={title} excerpt={excerpt} date={date} />);
+ 
+        return (<Card slug={slug} title={title} excerpt={excerpt} date={date} key={date + title}/>);
       })}
 
     </div>
