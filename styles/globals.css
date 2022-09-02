@@ -1,0 +1,74 @@
+html {
+    padding: 0;
+    margin: 0;
+    background-color: #e0e0e0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body { 
+    width: 1040px;
+    margin: 0 auto;
+    padding: 60px 170px 115px 170px;
+    background: white  -120px 145px no-repeat;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Headings */
+
+h1 { font-size: 4rem; font-weight: 400; }
+h2 { font-size: 3.6rem; font-weight: 400;}
+h3 { font-size: 3rem; font-weight: 400;}
+h4 { font-size: 3rem; font-weight: 400;}
+
+p, ul, ol { font-size: 2rem; }
+
+
+.heading, .heading a {
+    margin-bottom: 4rem;
+    font-family: Raleway;
+    color: #000;
+}
+
+
+/* Post preview card */
+.card, .card a {
+    color: #000;
+    text-decoration: none;
+}
+
+.card a:hover .title {
+    text-decoration: underline;
+}
+
+.card .title {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.card .excerpt {
+    margin-bottom: 1rem;
+}
+
+.card .date {
+    font-family: monospace;
+}
+
+
+/* Post formatting */
+.post .title {
+    font-weight: 600;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.post .date, .post .category, .post .tags {
+    font-family: monospace;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
