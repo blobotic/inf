@@ -22,6 +22,7 @@ var md = require('markdown-it')({
 md.use(mk, {"blockClass": "math-block", "errorColor" : " #cc0000"});
 
 import Header from "../../components/header";
+import Footer from "../../components/footer"
 
 export default function Post({frontmatter, content}) {
 	const {title, category, date, tags, excerpt} = frontmatter;
@@ -29,15 +30,19 @@ export default function Post({frontmatter, content}) {
 	return (<div className="post">
     <Head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css" integrity="sha384-bYdxxUwYipFNohQlHt0bjN/LCpueqWz13HufFEV1SUatKs1cm4L6fFgCi1jT643X" crossOrigin="anonymous" />
+    <title>{title}</title>
     </Head>
 		
     <Header />
+
 		<h1 className="title">{title}</h1>
 		<p className="date">{date}</p>
 		<p className="category">Category: {category}</p>
     <p className="tags">Tags: {tags.join()}</p>
     <hr className="sep" />
 		<div className="content" dangerouslySetInnerHTML={{ __html: md.render(content) }} />
+
+    <Footer />
 		</div>)
 }
 
